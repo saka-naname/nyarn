@@ -12,7 +12,7 @@ import (
 // addCmd represents the add command
 var addCmd = &cobra.Command{
 	Use:   "add",
-	Short: "Add an addon to your cat.",
+	Short: "Add an addon to your cat",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 

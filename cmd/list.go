@@ -12,7 +12,7 @@ import (
 // listCmd represents the list command
 var listCmd = &cobra.Command{
 	Use:   "list",
-	Short: "List your cat's addon(s).",
+	Short: "List your cat's addon(s)",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 
