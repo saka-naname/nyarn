@@ -23,13 +23,7 @@ var rootCmd = &cobra.Command{
 This application is a tool to print a pretty cat into your console.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	Run: func(cmd *cobra.Command, args []string) {
-		neko := cats.Cat{
-			Name: "ねこ",
-			Body: []string {"にゃ～ん"},
-		}
-		neko.Meow()
-	},
+	// Run: func(cmd *cobra.Command, args []string) { },
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -47,6 +41,7 @@ func init() {
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
+	cats.InitCats(rootCmd, cats.GetCatHouse())
 
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.nyarn.yaml)")
 
