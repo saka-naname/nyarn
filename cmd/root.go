@@ -9,6 +9,7 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"github.com/saka-naname/nyarn/cats"
 )
 
 var cfgFile string
@@ -23,7 +24,11 @@ This application is a tool to print a pretty cat into your console.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("にゃーん")
+		neko := cats.Cat{
+			Name: "ねこ",
+			Body: []string {"にゃ～ん"},
+		}
+		cats.Meow(neko)
 	},
 }
 
