@@ -28,7 +28,7 @@ This application is a tool to print a pretty cat into your console.`,
 			Name: "ねこ",
 			Body: []string {"にゃ～ん"},
 		}
-		cats.Meow(neko)
+		neko.Meow()
 	},
 }
 
